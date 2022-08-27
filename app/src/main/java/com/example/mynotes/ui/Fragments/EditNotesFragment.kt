@@ -54,6 +54,7 @@ class EditNotesFragment : Fragment() {
                 binding.pYellow.setImageResource(0)
             }
         }
+        
 
         binding.pGreen.setOnClickListener{
             priority = "1"
