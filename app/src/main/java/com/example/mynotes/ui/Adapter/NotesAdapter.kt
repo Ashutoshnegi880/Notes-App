@@ -4,10 +4,12 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mynotes.Model.Notes
 import com.example.mynotes.R
 import com.example.mynotes.databinding.ItemNotesBinding
+import com.example.mynotes.ui.Fragments.HomeFragmentDirections
 
 class NotesAdapter(val requireContext: Context, val notesList: List<Notes>) : RecyclerView.Adapter<NotesAdapter.notesViewHolder>() {
     class notesViewHolder(val binding:ItemNotesBinding) : RecyclerView.ViewHolder(binding.root) {
@@ -40,7 +42,11 @@ class NotesAdapter(val requireContext: Context, val notesList: List<Notes>) : Re
             "3"->{
                 holder.binding.viewPriority.setBackgroundResource(R.drawable.red_dot)
             }
+        }
 
+        holder.binding.root.setOnClickListener{
+            val action = HomeFragmentDirections.actionHomeFragmentToEditNotesFragment(data)
+            Navigation.findNavController(it).navigate(action)
         }
     }
 
