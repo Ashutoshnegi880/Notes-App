@@ -23,6 +23,7 @@ class EditNotesFragment : Fragment() {
     var priority: String = "1"
     val viewModel: NotesViewModel by viewModels()
 
+    
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -54,7 +55,7 @@ class EditNotesFragment : Fragment() {
                 binding.pYellow.setImageResource(0)
             }
         }
-        
+
 
         binding.pGreen.setOnClickListener{
             priority = "1"
