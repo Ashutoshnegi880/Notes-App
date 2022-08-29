@@ -29,12 +29,38 @@ class HomeFragment : Fragment() {
             binding.rvAllNotes.adapter = NotesAdapter(requireContext(), notesList)
         }
 
-        binding.btnAddNotes.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.action_homeFragment_to_createNotesFragment)
+        binding.allNotes.setOnClickListener {
+            viewModel.getNotes().observe(viewLifecycleOwner) { notesList ->
+                binding.rvAllNotes.layoutManager = GridLayoutManager(requireContext(), 2)
+                binding.rvAllNotes.adapter = NotesAdapter(requireContext(), notesList)
+            }
+        }
+
+        binding.filterHigh.setOnClickListener {
+            viewModel.getHighNotes().observe(viewLifecycleOwner) { notesList ->
+                binding.rvAllNotes.layoutManager = GridLayoutManager(requireContext(), 2)
+                binding.rvAllNotes.adapter = NotesAdapter(requireContext(), notesList)
+            }
+        }
+
+        binding.filterMedium.setOnClickListener {
+            viewModel.getMediumNotes().observe(viewLifecycleOwner) { notesList ->
+                binding.rvAllNotes.layoutManager = GridLayoutManager(requireContext(), 2)
+                binding.rvAllNotes.adapter = NotesAdapter(requireContext(), notesList)
+            }
+        }
+
+        binding.filterLow.setOnClickListener {
+            viewModel.getLowNotes().observe(viewLifecycleOwner) { notesList ->
+                binding.rvAllNotes.layoutManager = GridLayoutManager(requireContext(), 2)
+                binding.rvAllNotes.adapter = NotesAdapter(requireContext(), notesList)
+            }
         }
 
 
-
+        binding.btnAddNotes.setOnClickListener {
+            Navigation.findNavController(it).navigate(R.id.action_homeFragment_to_createNotesFragment)
+        }
         return binding.root
     }
 }
