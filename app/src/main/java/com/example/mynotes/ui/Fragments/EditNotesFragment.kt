@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.example.mynotes.Model.Notes
 import com.example.mynotes.R
@@ -124,7 +125,8 @@ class EditNotesFragment : Fragment() {
                 viewModel.deleteNote(oldNotes.data.id!!)
                 bottomSheet.dismiss()
 
-                Navigation.findNavController(it!!).navigate(R.id.action_editNotesFragment_to_homeFragment)
+
+                findNavController().navigate(R.id.action_editNotesFragment_to_homeFragment)
             }
 
             tvNo?.setOnClickListener {
