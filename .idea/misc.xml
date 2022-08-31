@@ -5,8 +5,10 @@
       <map>
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyNotes2/app/src/main/res/drawable-v24/red_dot.xml" value="0.181" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyNotes2/app/src/main/res/drawable/btn_filter_shape.xml" value="0.181" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyNotes2/app/src/main/res/drawable/delete_sheet.xml" value="0.181" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyNotes2/app/src/main/res/drawable/edit_txt_shape.xml" value="0.181" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyNotes2/app/src/main/res/drawable/green_dot.xml" value="0.181" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyNotes2/app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.181" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyNotes2/app/src/main/res/drawable/ic_baseline_done_24.xml" value="0.181" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyNotes2/app/src/main/res/drawable/no_btn.xml" value="0.181" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyNotes2/app/src/main/res/drawable/red_dot.xml" value="0.181" />
@@ -19,6 +21,8 @@
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyNotes2/app/src/main/res/layout/fragment_edit_notes.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyNotes2/app/src/main/res/layout/fragment_home.xml" value="0.4742468415937804" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyNotes2/app/src/main/res/layout/item_notes.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyNotes2/app/src/main/res/menu/delete_menu.xml" value="0.253125" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/MyNotes2/app/src/main/res/menu/search_menu.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
